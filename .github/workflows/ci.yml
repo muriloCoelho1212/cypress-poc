@@ -10,9 +10,5 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      - name: Checkout
-        run: npm run install
-      # Install npm dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Cypress run
         run: npm run cy:open
